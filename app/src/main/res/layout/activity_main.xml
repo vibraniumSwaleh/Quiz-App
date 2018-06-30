@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFBE6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#ffecb3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Please enter your name below before you start the IoT quiz."
+                    android:textColor="#4A6572"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:alpha="0.6"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:textColorHint="#4A6572" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="1. What is the image that we have been using to boot Intel Galileo Gen 2 board?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:alpha="0.7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_q1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Local agent"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IoTkit"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Device Id"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q1_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:paddingTop="15dp"
+                        android:text="SSH Terminal"
+                        android:textColor="#4A6572" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="2. PIP is ________ acronym.?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:alpha="0.7"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_q2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Incrusive"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Package"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recursive"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Excursive"
+                        android:textColor="#4A6572" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="3. Which are IoT devices?" />
+
+                <CheckBox
+                    android:id="@+id/button_q3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Smart Plug"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q3_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Smart Bulbs"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q3_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Analogue wrist watch"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q3_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Smart Lock"
+                    android:textColor="#4A6572" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="4. Which are types of connections used in IoT?" />
+
+                <CheckBox
+                    android:id="@+id/button_q4_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Wifi"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q4_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Radio frequency"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q4_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Laser"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q4_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Bluetooth"
+                    android:textColor="#4A6572" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="5. Which is an IoT component" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cpu" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ram" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/strorage" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/data" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:alpha="0.7"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/button_q5_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="20dp"
+                            android:textColor="#4A6572" />
+
+                        <RadioButton
+                            android:id="@+id/button_q5_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_weight="1"
+                            android:textColor="#4A6572" />
+
+                        <RadioButton
+                            android:id="@+id/button_q5_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_weight="1"
+                            android:textColor="#4A6572" />
+
+                        <RadioButton
+                            android:id="@+id/button_q5_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:layout_weight="1"
+                            android:textColor="#4A6572" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="6. Which computing can be heavy weight and dense form of computing power?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:alpha="0.7"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_q6_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fog computing"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q6_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cloud computing"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q6_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mist computing"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q6_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Cloud computing"
+                        android:textColor="#4A6572" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="Question 7" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bluetooth" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/satelite" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/infrared" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/wifi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/button_q7_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="4dp"
+                        android:alpha="0.7"
+                        android:textColor="#4A6572" />
+
+                    <CheckBox
+                        android:id="@+id/button_q7_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="4dp"
+                        android:alpha="0.7"
+                        android:textColor="#4A6572" />
+
+                    <CheckBox
+                        android:id="@+id/button_q7_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="4dp"
+                        android:alpha="0.7"
+                        android:textColor="#4A6572" />
+
+                    <CheckBox
+                        android:id="@+id/button_q7_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="4dp"
+                        android:alpha="0.7"
+                        android:textColor="#4A6572" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="8. What does IoT involve?" />
+
+                <CheckBox
+                    android:id="@+id/button_q8_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="People"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q8_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Processes"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q8_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Data"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q8_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Electricity"
+                    android:textColor="#4A6572" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="9. Do we run our program in same computer where we have written?" />
+
+                <CheckBox
+                    android:id="@+id/button_q9_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="True"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q9_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="Cannot be determined"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q9_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="False"
+                    android:textColor="#4A6572" />
+
+                <CheckBox
+                    android:id="@+id/button_q9_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:alpha="0.7"
+                    android:text="May or may not"
+                    android:textColor="#4A6572" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#F9AA33"
+                    android:text="10. Building automation demonstrates the need for?" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:alpha="0.7"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_q10_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Local operations"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q10_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Control function"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q10_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edge intelligence"
+                        android:textColor="#4A6572" />
+
+                    <RadioButton
+                        android:id="@+id/button_q10_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sensors"
+                        android:textColor="#4A6572" />
+                </RadioGroup>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corner"
+                    android:onClick="submitAnswer"
+                    android:text="Submit"
+                    android:textColor="#F9AA33" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
